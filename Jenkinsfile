@@ -23,10 +23,11 @@ pipeline {
                     archiveArtifacts 'target/*.jar'
                 }
             }
+          }
           stage ('Deploy'){
             steps {
               sh 'echo \'hello world application deploymenty\''
-            }
+                }
           }
         }
     }
