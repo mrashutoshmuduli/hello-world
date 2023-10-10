@@ -27,6 +27,7 @@ pipeline {
           stage ('Deploy'){
             steps {
               sh 'echo \'hello world application deploymenty\''
+              sh 'java -jar ./target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar'
                 }
           }
         }
